@@ -1,0 +1,104 @@
+{
+    "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.3",
+    "heartbeatAt": "2023-08-23T08:13:57.582998",
+    "startedAt": "2023-08-23T08:13:56.631279",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "Llama2-7b-korean-using-QLoRA.ipynb",
+    "root": "/workspace",
+    "git": {
+        "remote": "https://github.com/BaguHo/Llama2-7b-korean-using-QLoRA.git",
+        "commit": "56c29a5d5b53aee6f938095f6f79b6108aade1ff"
+    },
+    "email": "say7fish@gmail.com",
+    "host": "5c34bcf4c89d",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3695.9989999999984,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3695.999,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 1006.853931427002,
+        "used": 60.73051452636719
+    },
+    "gpu": "NVIDIA GeForce GTX 1080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 7.663188934326172
+    }
+}
