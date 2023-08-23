@@ -1,8 +1,8 @@
 {
     "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.10",
     "python": "3.8.3",
-    "heartbeatAt": "2023-08-23T08:13:57.582998",
-    "startedAt": "2023-08-23T08:13:56.631279",
+    "heartbeatAt": "2023-08-23T13:48:03.552978",
+    "startedAt": "2023-08-23T13:48:02.687691",
     "docker": null,
     "cuda": null,
     "args": [],
@@ -11,7 +11,7 @@
     "root": "/workspace",
     "git": {
         "remote": "https://github.com/BaguHo/Llama2-7b-korean-using-QLoRA.git",
-        "commit": "56c29a5d5b53aee6f938095f6f79b6108aade1ff"
+        "commit": "b654b3d86c92306fca5744a3ea7f46f4bc1552b5"
     },
     "email": "say7fish@gmail.com",
     "host": "5c34bcf4c89d",
@@ -88,7 +88,7 @@
     ],
     "disk": {
         "total": 1006.853931427002,
-        "used": 60.73051452636719
+        "used": 87.8818473815918
     },
     "gpu": "NVIDIA GeForce GTX 1080",
     "gpu_count": 1,

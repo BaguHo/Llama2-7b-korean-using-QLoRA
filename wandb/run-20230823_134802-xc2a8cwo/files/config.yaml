@@ -6,35 +6,41 @@ _wandb:
     python_version: 3.8.3
     cli_version: 0.15.8
     framework: huggingface
-    huggingface_version: 4.31.0
+    huggingface_version: 4.32.0
     is_jupyter_run: true
     is_kaggle_kernel: false
-    start_time: 1692778436.641956
+    start_time: 1692798482.697799
     t:
       1:
       - 1
+      - 5
       - 11
       - 49
       - 51
+      - 53
       - 55
       - 71
       - 84
       - 98
+      - 105
       2:
       - 1
+      - 5
       - 11
       - 49
       - 51
+      - 53
       - 55
       - 71
       - 84
       - 98
+      - 105
       3:
       - 7
       - 23
       4: 3.8.3
       5: 0.15.8
-      6: 4.31.0
+      6: 4.32.0
       8:
       - 1
       - 5
@@ -250,13 +256,14 @@ _name_or_path:
   value: TinyPixel/Llama-2-7B-bf16-sharded
 transformers_version:
   desc: null
-  value: 4.31.0
+  value: 4.32.0
 model_type:
   desc: null
   value: llama
 quantization_config:
   desc: null
   value:
+    quant_method: QuantizationMethod.BITS_AND_BYTES
     load_in_8bit: false
     load_in_4bit: true
     llm_int8_threshold: 6.0
@@ -295,16 +302,16 @@ per_device_eval_batch_size:
   value: 8
 per_gpu_train_batch_size:
   desc: null
-  value: None
+  value: null
 per_gpu_eval_batch_size:
   desc: null
-  value: None
+  value: null
 gradient_accumulation_steps:
   desc: null
   value: 4
 eval_accumulation_steps:
   desc: null
-  value: None
+  value: null
 eval_delay:
   desc: null
   value: 0
@@ -352,7 +359,7 @@ log_on_each_node:
   value: true
 logging_dir:
   desc: null
-  value: ./results/runs/Aug21_09-04-37_5c34bcf4c89d
+  value: ./results/runs/Aug23_13-41-28_5c34bcf4c89d
 logging_strategy:
   desc: null
   value: steps
@@ -373,7 +380,7 @@ save_steps:
   value: 100
 save_total_limit:
   desc: null
-  value: None
+  value: null
 save_safetensors:
   desc: null
   value: false
@@ -381,6 +388,9 @@ save_on_each_node:
   desc: null
   value: false
 no_cuda:
+  desc: null
+  value: false
+use_cpu:
   desc: null
   value: false
 use_mps_device:
@@ -391,7 +401,7 @@ seed:
   value: 42
 data_seed:
   desc: null
-  value: None
+  value: null
 jit_mode_eval:
   desc: null
   value: false
@@ -418,28 +428,28 @@ fp16_full_eval:
   value: false
 tf32:
   desc: null
-  value: None
+  value: null
 local_rank:
   desc: null
   value: 0
 ddp_backend:
   desc: null
-  value: None
+  value: null
 tpu_num_cores:
   desc: null
-  value: None
+  value: null
 tpu_metrics_debug:
   desc: null
   value: false
 debug:
   desc: null
-  value: '[]'
+  value: []
 dataloader_drop_last:
   desc: null
   value: false
 eval_steps:
   desc: null
-  value: None
+  value: null
 dataloader_num_workers:
   desc: null
   value: 0
@@ -457,37 +467,40 @@ remove_unused_columns:
   value: true
 label_names:
   desc: null
-  value: None
+  value: null
 load_best_model_at_end:
   desc: null
   value: false
 metric_for_best_model:
   desc: null
-  value: None
+  value: null
 greater_is_better:
   desc: null
-  value: None
+  value: null
 ignore_data_skip:
   desc: null
   value: false
 sharded_ddp:
   desc: null
-  value: '[]'
+  value: []
 fsdp:
   desc: null
-  value: '[]'
+  value: []
 fsdp_min_num_params:
   desc: null
   value: 0
 fsdp_config:
   desc: null
-  value: '{''fsdp_min_num_params'': 0, ''xla'': False, ''xla_fsdp_grad_ckpt'': False}'
+  value:
+    min_num_params: 0
+    xla: false
+    xla_fsdp_grad_ckpt: false
 fsdp_transformer_layer_cls_to_wrap:
   desc: null
-  value: None
+  value: null
 deepspeed:
   desc: null
-  value: None
+  value: null
 label_smoothing_factor:
   desc: null
   value: 0.0
@@ -496,7 +509,7 @@ optim:
   value: paged_adamw_32bit
 optim_args:
   desc: null
-  value: None
+  value: null
 adafactor:
   desc: null
   value: false
@@ -508,16 +521,19 @@ length_column_name:
   value: length
 report_to:
   desc: null
-  value: '[''wandb'']'
+  value:
+  - tensorboard
+  - wandb
+  - codecarbon
 ddp_find_unused_parameters:
   desc: null
-  value: None
+  value: null
 ddp_bucket_cap_mb:
   desc: null
-  value: None
+  value: null
 ddp_broadcast_buffers:
   desc: null
-  value: None
+  value: null
 dataloader_pin_memory:
   desc: null
   value: true
@@ -532,10 +548,10 @@ push_to_hub:
   value: false
 resume_from_checkpoint:
   desc: null
-  value: None
+  value: null
 hub_model_id:
   desc: null
-  value: None
+  value: null
 hub_strategy:
   desc: null
   value: every_save
@@ -543,6 +559,9 @@ hub_token:
   desc: null
   value: <HUB_TOKEN>
 hub_private_repo:
+  desc: null
+  value: false
+hub_always_push:
   desc: null
   value: false
 gradient_checkpointing:
@@ -556,10 +575,10 @@ fp16_backend:
   value: auto
 push_to_hub_model_id:
   desc: null
-  value: None
+  value: null
 push_to_hub_organization:
   desc: null
-  value: None
+  value: null
 push_to_hub_token:
   desc: null
   value: <PUSH_TO_HUB_TOKEN>
@@ -574,7 +593,7 @@ full_determinism:
   value: false
 torchdynamo:
   desc: null
-  value: None
+  value: null
 ray_scope:
   desc: null
   value: last
@@ -586,16 +605,10 @@ torch_compile:
   value: false
 torch_compile_backend:
   desc: null
-  value: None
+  value: null
 torch_compile_mode:
   desc: null
-  value: None
-xpu_backend:
+  value: null
+dispatch_batches:
   desc: null
-  value: None
-train_batch_size:
-  desc: null
-  value: 4
-eval_batch_size:
-  desc: null
-  value: 8
+  value: null
