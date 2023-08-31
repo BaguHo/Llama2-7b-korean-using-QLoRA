@@ -1,0 +1,60 @@
+2023-08-24 07:13:24,692 INFO    StreamThr :432 [internal.py:wandb_internal():86] W&B internal server running at pid: 432, started at: 2023-08-24 07:13:24.692240
+2023-08-24 07:13:24,694 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: status
+2023-08-24 07:13:24,704 INFO    WriterThread:432 [datastore.py:open_for_write():85] open: /workspace/wandb/run-20230824_071324-7i0lcils/run-7i0lcils.wandb
+2023-08-24 07:13:24,704 DEBUG   SenderThread:432 [sender.py:send():379] send: header
+2023-08-24 07:13:24,757 DEBUG   SenderThread:432 [sender.py:send():379] send: run
+2023-08-24 07:13:25,301 INFO    SenderThread:432 [dir_watcher.py:__init__():211] watching files in: /workspace/wandb/run-20230824_071324-7i0lcils/files
+2023-08-24 07:13:25,301 INFO    SenderThread:432 [sender.py:_start_run_threads():1121] run started: 7i0lcils with start time 1692861204.694745
+2023-08-24 07:13:25,301 DEBUG   SenderThread:432 [sender.py:send_request():406] send_request: summary_record
+2023-08-24 07:13:25,301 INFO    SenderThread:432 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-24 07:13:25,304 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: check_version
+2023-08-24 07:13:25,304 DEBUG   SenderThread:432 [sender.py:send_request():406] send_request: check_version
+2023-08-24 07:13:25,377 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: run_start
+2023-08-24 07:13:25,393 DEBUG   HandlerThread:432 [system_info.py:__init__():31] System info init
+2023-08-24 07:13:25,393 DEBUG   HandlerThread:432 [system_info.py:__init__():46] System info init done
+2023-08-24 07:13:25,393 INFO    HandlerThread:432 [system_monitor.py:start():181] Starting system monitor
+2023-08-24 07:13:25,393 INFO    SystemMonitor:432 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-24 07:13:25,394 INFO    HandlerThread:432 [system_monitor.py:probe():201] Collecting system info
+2023-08-24 07:13:25,394 INFO    SystemMonitor:432 [interfaces.py:start():190] Started cpu monitoring
+2023-08-24 07:13:25,395 INFO    SystemMonitor:432 [interfaces.py:start():190] Started disk monitoring
+2023-08-24 07:13:25,396 INFO    SystemMonitor:432 [interfaces.py:start():190] Started gpu monitoring
+2023-08-24 07:13:25,396 INFO    SystemMonitor:432 [interfaces.py:start():190] Started memory monitoring
+2023-08-24 07:13:25,397 INFO    SystemMonitor:432 [interfaces.py:start():190] Started network monitoring
+2023-08-24 07:13:25,404 DEBUG   HandlerThread:432 [system_info.py:probe():195] Probing system
+2023-08-24 07:13:25,408 DEBUG   HandlerThread:432 [system_info.py:_probe_git():180] Probing git
+2023-08-24 07:13:25,417 DEBUG   HandlerThread:432 [system_info.py:_probe_git():188] Probing git done
+2023-08-24 07:13:25,417 DEBUG   HandlerThread:432 [system_info.py:probe():240] Probing system done
+2023-08-24 07:13:25,417 DEBUG   HandlerThread:432 [system_monitor.py:probe():210] {'os': 'Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.10', 'python': '3.8.3', 'heartbeatAt': '2023-08-24T07:13:25.404270', 'startedAt': '2023-08-24T07:13:24.680956', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'Llama2-7b-korean-using-QLoRA.ipynb', 'root': '/workspace', 'git': {'remote': 'https://github.com/BaguHo/Llama2-7b-korean-using-QLoRA.git', 'commit': '7b85eec2ac74f52930424c7e632d77b66fdae46d'}, 'email': 'say7fish@gmail.com', 'host': '5c34bcf4c89d', 'username': 'root', 'executable': '/opt/conda/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3696.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.0, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 1006.853931427002, 'used': 87.8825912475586}, 'gpu': 'NVIDIA GeForce GTX 1080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080', 'memory_total': 8589934592}], 'memory': {'total': 7.663188934326172}}
+2023-08-24 07:13:25,417 INFO    HandlerThread:432 [system_monitor.py:probe():211] Finished collecting system info
+2023-08-24 07:13:25,417 INFO    HandlerThread:432 [system_monitor.py:probe():214] Publishing system info
+2023-08-24 07:13:25,417 DEBUG   HandlerThread:432 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-08-24 07:13:25,418 DEBUG   HandlerThread:432 [system_info.py:_save_pip():67] Saving pip packages done
+2023-08-24 07:13:25,420 DEBUG   HandlerThread:432 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-08-24 07:13:25,989 DEBUG   HandlerThread:432 [system_info.py:_save_conda():86] Saving conda packages done
+2023-08-24 07:13:25,990 INFO    HandlerThread:432 [system_monitor.py:probe():216] Finished publishing system info
+2023-08-24 07:13:26,001 DEBUG   SenderThread:432 [sender.py:send():379] send: files
+2023-08-24 07:13:26,001 INFO    SenderThread:432 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-08-24 07:13:26,015 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-24 07:13:26,016 DEBUG   SenderThread:432 [sender.py:send_request():406] send_request: stop_status
+2023-08-24 07:13:26,275 DEBUG   SenderThread:432 [sender.py:send():379] send: telemetry
+2023-08-24 07:13:26,275 DEBUG   SenderThread:432 [sender.py:send():379] send: config
+2023-08-24 07:13:26,276 DEBUG   SenderThread:432 [sender.py:send():379] send: metric
+2023-08-24 07:13:26,276 DEBUG   SenderThread:432 [sender.py:send():379] send: telemetry
+2023-08-24 07:13:26,276 DEBUG   SenderThread:432 [sender.py:send():379] send: metric
+2023-08-24 07:13:26,276 WARNING SenderThread:432 [sender.py:send_metric():1326] Seen metric with glob (shouldn't happen)
+2023-08-24 07:13:26,302 INFO    Thread-12 :432 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/wandb/run-20230824_071324-7i0lcils/files/requirements.txt
+2023-08-24 07:13:26,302 INFO    Thread-12 :432 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/wandb/run-20230824_071324-7i0lcils/files/conda-environment.yaml
+2023-08-24 07:13:26,302 INFO    Thread-12 :432 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/wandb/run-20230824_071324-7i0lcils/files/wandb-summary.json
+2023-08-24 07:13:26,302 INFO    Thread-12 :432 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/wandb/run-20230824_071324-7i0lcils/files/wandb-metadata.json
+2023-08-24 07:13:26,302 INFO    Thread-12 :432 [dir_watcher.py:_on_file_created():271] file/dir created: /workspace/wandb/run-20230824_071324-7i0lcils/files/output.log
+2023-08-24 07:13:26,730 INFO    wandb-upload_0:432 [upload_job.py:push():131] Uploaded file /tmp/tmpmq5uus60wandb/7l3dyy5e-wandb-metadata.json
+2023-08-24 07:13:28,301 INFO    Thread-12 :432 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/wandb/run-20230824_071324-7i0lcils/files/output.log
+2023-08-24 07:13:30,278 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: status_report
+2023-08-24 07:13:35,278 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: status_report
+2023-08-24 07:13:40,279 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: status_report
+2023-08-24 07:13:41,015 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-24 07:13:41,015 DEBUG   SenderThread:432 [sender.py:send_request():406] send_request: stop_status
+2023-08-24 07:13:42,306 INFO    Thread-12 :432 [dir_watcher.py:_on_file_modified():288] file/dir modified: /workspace/wandb/run-20230824_071324-7i0lcils/files/output.log
+2023-08-24 07:13:46,233 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: status_report
+2023-08-24 07:13:51,234 DEBUG   HandlerThread:432 [handler.py:handle_request():144] handle_request: status_report
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
